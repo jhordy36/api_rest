@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+
+
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/darkblue"
+        android:orientation="vertical"
+        android:padding="50dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="PRACTICA"
+            android:textColor="#fff"
+            android:textSize="40sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="25dp"
+            android:text="ID: Autogenerado"
+            android:textColor="#fff"
+            android:textSize="15sp" />
+        <EditText
+
+            android:id="@+id/etapellido"
+            android:textColor="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:textColorHint="#fff"
+            android:drawableLeft="@drawable/vectorfoco"
+            android:background="@drawable/estilodetext2"
+            android:drawablePadding="10dp"
+            android:hint="Apellido"
+            />
+
+        <EditText
+            android:drawablePadding="10dp"
+            android:textColor="#fff"
+            android:id="@+id/etnombre"
+            android:layout_marginTop="15dp"
+            android:drawableLeft="@drawable/vectorfoco"
+            android:textColorHint="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/estilodetext2"
+            android:hint="Nombre"
+            />
+        <EditText
+            android:drawablePadding="10dp"
+            android:textColor="#fff"
+            android:id="@+id/etsueldo"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/estilodetext2"
+            android:drawableLeft="@drawable/money"
+            android:textColorHint="#fff"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Sueldo"
+            android:inputType="number"
+            />
+
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentTop="true">
+
+
+        <LinearLayout
+
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="50dp">
+
+            <Button
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/estilodetext3"
+                android:text="INSERTAR"
+                android:id="@+id/btinsertar"
+                android:textColor="@color/darkblue" />
+            <Button
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/estilodetext"
+                android:text="EDITAR"
+                android:textColor="#fff" />
+            <Button
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/estilodetext3"
+                android:text="BORRAR"
+                android:textColor="@color/darkblue" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</LinearLayout>
