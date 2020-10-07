@@ -34,7 +34,7 @@ public class HomeActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
 
-//        listView = findViewById(R.id.);
+        listView = findViewById(R.id.myListView);
         adaptador = new Adaptador(this,users);
         listView.setAdapter(adaptador);
         mostrarDatos();
