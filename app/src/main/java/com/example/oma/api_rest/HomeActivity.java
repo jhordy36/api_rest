@@ -22,10 +22,9 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class HomeActivity extends AppCompatActivity {
-
     private ListView listView;
     Adaptador adaptador;
-    public static ArrayList<Users>users=new ArrayList<>();
+    public static ArrayList<Users> users=new ArrayList<>();
 
     String url = "https://supermundane-spoon.000webhostapp.com/Personas/mostrar.php";
     Users usuarios;
@@ -82,4 +81,5 @@ public class HomeActivity extends AppCompatActivity {
 
         startActivity(new Intent(getApplicationContext(), MainActivity.class));
     }
+
 }
