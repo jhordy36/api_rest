@@ -28,10 +28,13 @@ public class Adaptador extends ArrayAdapter<Users> {
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
         View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.my_list_item, null, true);
+
         TextView tvid=view.findViewById(R.id.txt_id);
         TextView tvnombre=view.findViewById(R.id.txt_name);
 
-        tvid.setText(arratListUsers.get(position).getNombre());
+        tvid.setText(arratListUsers.get(position).getId());
+        tvnombre.setText(arratListUsers.get(position).getNombre());
+
         return view;
     }
 }
