@@ -27,9 +27,9 @@ public class Adaptador extends ArrayAdapter<Users> {
     @NonNull
     @Override
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
-        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.ay_list_item, null, true);
-        TextView tvid=view.findViewById(R.id.tvid);
-        TextView tvnombre=view.findViewById(R.id.tvnombre);
+        View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.my_list_item, null, true);
+        TextView tvid=view.findViewById(R.id.txt_id);
+        TextView tvnombre=view.findViewById(R.id.txt_name);
 
         tvid.setText(arratListUsers.get(position).getNombre());
         return view;
