@@ -57,7 +57,7 @@ public class MainActivity extends AppCompatActivity {
             sueldo.setError("Complete los campos");
         } else {
             progressDialog.show();
-            StringRequest request=new StringRequest(Request.Method.POST, "", new Response.Listener<String>() {
+            StringRequest request=new StringRequest(Request.Method.POST, "https://supermundane-spoon.000webhostapp.com/Personas/insertar.php", new Response.Listener<String>() {
                 @Override
                 public void onResponse(String response) {
                     if (response.equalsIgnoreCase("Datos insertados")) {
